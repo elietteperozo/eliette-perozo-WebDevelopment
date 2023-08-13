@@ -1,0 +1,95 @@
+/* General Styling */
+.main {
+  background: linear-gradient(70deg, rgb(6, 76, 130), rgb(50, 147, 221));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0px;
+  background-position: center;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Title Section */
+.text h1 {
+  font-size: 60px;
+
+}
+
+
+/* Form Section*/
+.form-box {
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.form-box input {
+  border-radius: 10px;
+}
+
+.form-box input:focus {
+  box-shadow: 0 0 0;
+  border: 1px solid rgb(6, 76, 130);
+}
+
+.form-box select:focus {
+  box-shadow: 0 0 0;
+  border: 1px solid rgb(6, 76, 130);
+}
+
+.form-box select {
+  border-radius: 10px;
+}
+
+.order-now-btn {
+  color: white;
+  background: linear-gradient(-70deg, rgb(6, 76, 130), rgb(50, 147, 221));
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(6, 76, 130);
+}
+
+.link:hover {
+  color: rgb(50, 147, 221);
+}
+
+.bottom-note {
+  color: rgb(6, 76, 130);
+  font-weight:600;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .text {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form-box {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .text h1{
+    font-size: 30px;
+  }
+  .text h2 {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form: Computer Elements</title>
+  <meta name="author" content="Eliette Perozo">
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" defer>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="main">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Title Section -->
+        <div class="col-lg-7 col-md-12 d-flex align-items-center">
+          <div class="text text-center">
+            <h1 class="text-white">Order your favorite computer elements HERE!</h1>
+            <h2 class="text-white">Fill out the form and receive them at your house in 3 days</h2>
+          </div>
+        </div>
+        <!-- Form Section -->
+        <div class="col-lg-5 col-md-10 col-sm-12">
+          <div class="form-box px-5 py-4">
+            <form>
+              <h2 class="text-center mb-0 title-section">Computer Elements</h2>
+              <h2 class="text-center mb-4 title-section">Order Form</h2>
+              <div>
+                <label class="label-text" for="name">First and Last Name</label>
+                <input required type="text" name="name" id="name" placeholder="Write your first and last name" class="form-control mb-3">
+              </div>
+              <div>
+                <label class="label-text" for="email">Email</label>
+                <input required type="email" name="email" id="email" placeholder="Write your email" class="form-control mb-3">
+              </div>
+              <div>
+                <label class="label-text" for="address">Address</label>
+                <input required type="text" name="address" id="address" placeholder="Write your address" class="form-control mb-3">
+              </div>
+              <div> 
+                <label class="label-text" for="phone">Phone Number</label>
+                <input required type="number" name="phone-number" id="phone-number" placeholder="Contact number" class="form-control mb-3">
+              </div> 
+              <div>
+                <label class="label-text" for="computer-elements">Computer Elements</label>
+                <select  name="computer-elements" id="computer-elements" class="form-select mb-3" required>
+                  <option value="" selected disabled>Select</option>
+                  <option value="screen">Screen</option>
+                  <option value="keyboard">Keyboard</option>
+                  <option value="mouse">Mouse</option>
+                </select>
+              </div>
+              <div id="quantity">
+                <label class="label-text" for="name">Quantity</label>
+                <div class="form-check">
+                  <input class="form-check-input mb-3" type="radio" name="radioOptions" id="radioOption1" value="option1">
+                  <label class="form-check-label" for="radioOption1">
+                    1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input mb-3" type="radio" name="radioOptions" id="radioOption2" value="option2">
+                  <label class="form-check-label" for="radioOption2">
+                  2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radioOptions" id="radioOption3" value="option3">
+                  <label class="form-check-label" for="radioOption3">
+                  3
+                  </label>
+                </div>
+              </div>
+              <div class="mt-3 mb-3">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label><small>By ordering, I agree to <a href="#"class="link"><b>Terms</b></a> and <a href="#" class="link"><b>Conditions</b></a></small></label>
+              </div>
+              <div id="confirmationBox" class="text-center mt-4" style="display: none;">
+                <p id="confirmationMessage"></p>
+              </div>
+              <button id="order-now-btn" type= "submit" class="order-now-btn mb-3 btn-outline-info btn">Order Now
+                <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+              <p class="text-center bottom-note">You can fill out this form as many times as you wish</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+ 
+</body>
+</html>
